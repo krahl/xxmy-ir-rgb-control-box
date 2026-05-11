@@ -11,7 +11,8 @@ Mate running ESPHome's IR/RF proxy firmware.
 - Assumed-state RGB light entity for the MY302 control box.
 - Native Home Assistant color and effect controls.
 - Button entities for all 24 physical remote keys.
-- Brighter/darker buttons instead of a fake brightness slider.
+- Brightness slider support by translating changes into repeated
+  brighter/darker IR button presses.
 - Built-in common 24-key MY302 profile.
 - Optional learned raw-code overrides for receiver or remote variants.
 - English and German translations.
@@ -64,9 +65,10 @@ matches that capture.
 
 Home Assistant will show a normal light card for color and effects, similar to
 the MiPow PlayBulb integration's native light UI. The MY302 receiver cannot
-report state and does not support press-and-hold brightness through Home
-Assistant, so brightness is represented by the `Brighter` and `Darker` button
-entities instead of a slider.
+report state, so brightness is assumed. Moving the brightness slider is mapped
+onto the receiver's 16 physical brightness steps by sending repeated `Brighter`
+or `Darker` IR commands in quick succession. The individual `Brighter` and
+`Darker` button entities are still available for dashboards and automations.
 
 ## Command Keys
 
