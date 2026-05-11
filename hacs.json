@@ -1,0 +1,6 @@
+{
+  "name": "XXMY MY302 IR RGB Control Box",
+  "render_readme": true,
+  "domains": ["light", "button"],
+  "homeassistant": "2026.4.0"
+}

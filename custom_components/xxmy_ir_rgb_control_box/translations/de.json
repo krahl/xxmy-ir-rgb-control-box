@@ -1,0 +1,121 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Dieser MY302-Controller wurde bereits mit diesem Sender konfiguriert.",
+      "no_emitters": "Keine Infrarot-Sender-Entitaten gefunden. Bitte richte zuerst einen Infrarot-Sender ein."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "infrared_entity_id": "Infrarot-Sender"
+        },
+        "data_description": {
+          "infrared_entity_id": "Die Infrarot-Sender-Entitat, die auf den MY302-Empfanger ausgerichtet ist."
+        },
+        "description": "Wahle den Infrarot-Sender fur die XXMY MY302 RGB-Control-Box aus.",
+        "title": "XXMY MY302 IR RGB Control Box einrichten"
+      }
+    }
+  },
+  "options": {
+    "error": {
+      "invalid_json": "Die JSON-Befehlszuordnung ist ungultig.",
+      "no_capture": "Es ist noch kein gelernter IR-Code verfugbar. Drucke bei laufender XIAO-Erfassungs-Firmware eine Taste der Fernbedienung und versuche es erneut."
+    },
+    "step": {
+      "init": {
+        "data": {
+          "mode": "Aktion"
+        },
+        "title": "MY302 IR-Befehle"
+      },
+      "learn_latest": {
+        "data": {
+          "command_key": "Zu ersetzende Taste"
+        },
+        "description": "Status der letzten Erfassung: {capture_status}. Wahle aus, welche MY302-Taste den zuletzt erfassten IR-Code verwenden soll.",
+        "title": "Aus letzter Erfassung lernen"
+      },
+      "import_json": {
+        "data": {
+          "command_map": "JSON-Befehlszuordnung"
+        },
+        "description": "Importiere eine JSON-Befehlszuordnung. Importierte Befehle ersetzen vorhandene gelernte Uberschreibungen.",
+        "title": "Gelernte Befehle importieren"
+      },
+      "export_json": {
+        "data": {
+          "command_map": "JSON-Befehlszuordnung"
+        },
+        "description": "Aktuelle gelernte Befehls-Uberschreibungen.",
+        "title": "Gelernte Befehle exportieren"
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "brighter": { "name": "Heller" },
+      "darker": { "name": "Dunkler" },
+      "off": { "name": "Aus" },
+      "on": { "name": "Ein" },
+      "red": { "name": "Rot" },
+      "green": { "name": "Grun" },
+      "blue": { "name": "Blau" },
+      "white": { "name": "Weiss" },
+      "red_orange": { "name": "Orange" },
+      "green_light": { "name": "Hellgrun" },
+      "blue_dark": { "name": "Dunkelblau" },
+      "flash": { "name": "Flash" },
+      "red_amber": { "name": "Bernstein" },
+      "green_cyan": { "name": "Cyan" },
+      "blue_royal": { "name": "Konigsblau" },
+      "strobe": { "name": "Strobe" },
+      "red_yellow": { "name": "Gelb" },
+      "green_sky": { "name": "Himmelblau" },
+      "blue_pink": { "name": "Pink" },
+      "fade": { "name": "Fade" },
+      "red_pale_yellow": { "name": "Hellgelb" },
+      "green_aqua": { "name": "Aqua" },
+      "blue_purple": { "name": "Lila" },
+      "smooth": { "name": "Smooth" }
+    }
+  },
+  "selector": {
+    "mode": {
+      "options": {
+        "learn_latest": "Letzte Erfassung lernen",
+        "import_json": "JSON importieren",
+        "export_json": "JSON exportieren",
+        "clear_overrides": "Gelernte Uberschreibungen loschen"
+      }
+    },
+    "command_key": {
+      "options": {
+        "brighter": "Heller",
+        "darker": "Dunkler",
+        "off": "Aus",
+        "on": "Ein",
+        "red": "Rot",
+        "green": "Grun",
+        "blue": "Blau",
+        "white": "Weiss",
+        "red_orange": "Orange",
+        "green_light": "Hellgrun",
+        "blue_dark": "Dunkelblau",
+        "flash": "Flash",
+        "red_amber": "Bernstein",
+        "green_cyan": "Cyan",
+        "blue_royal": "Konigsblau",
+        "strobe": "Strobe",
+        "red_yellow": "Gelb",
+        "green_sky": "Himmelblau",
+        "blue_pink": "Pink",
+        "fade": "Fade",
+        "red_pale_yellow": "Hellgelb",
+        "green_aqua": "Aqua",
+        "blue_purple": "Lila",
+        "smooth": "Smooth"
+      }
+    }
+  }
+}

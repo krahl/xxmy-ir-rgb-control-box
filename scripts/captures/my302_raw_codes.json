@@ -1,0 +1,8 @@
+{
+  "profile": "xxmy_my302_common_24_key",
+  "source": "common_extended_nec_fallback",
+  "modulation": 38000,
+  "nec_address": "0xEF00",
+  "notes": "This file documents the baked fallback profile. Replace with real XIAO IR Mate raw captures when available.",
+  "commands": {}
+}

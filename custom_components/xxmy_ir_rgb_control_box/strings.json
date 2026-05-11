@@ -1,0 +1,121 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This MY302 controller has already been configured with this transmitter.",
+      "no_emitters": "No infrared transmitter entities found. Please set up an infrared transmitter first."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "infrared_entity_id": "Infrared transmitter"
+        },
+        "data_description": {
+          "infrared_entity_id": "The infrared transmitter entity positioned to control the MY302 receiver."
+        },
+        "description": "Select the infrared transmitter to use for the XXMY MY302 RGB control box.",
+        "title": "Set up XXMY MY302 IR RGB Control Box"
+      }
+    }
+  },
+  "options": {
+    "error": {
+      "invalid_json": "The command map JSON is invalid.",
+      "no_capture": "No captured IR code is available yet. Press a remote button with the XIAO capture firmware running, then try again."
+    },
+    "step": {
+      "init": {
+        "data": {
+          "mode": "Action"
+        },
+        "title": "MY302 IR commands"
+      },
+      "learn_latest": {
+        "data": {
+          "command_key": "Button to replace"
+        },
+        "description": "Latest capture status: {capture_status}. Select which MY302 button should use the latest captured IR code.",
+        "title": "Learn from latest capture"
+      },
+      "import_json": {
+        "data": {
+          "command_map": "Command map JSON"
+        },
+        "description": "Import a JSON command map. Imported commands replace existing learned overrides.",
+        "title": "Import learned commands"
+      },
+      "export_json": {
+        "data": {
+          "command_map": "Command map JSON"
+        },
+        "description": "Current learned command overrides.",
+        "title": "Export learned commands"
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "brighter": { "name": "Brighter" },
+      "darker": { "name": "Darker" },
+      "off": { "name": "Off" },
+      "on": { "name": "On" },
+      "red": { "name": "Red" },
+      "green": { "name": "Green" },
+      "blue": { "name": "Blue" },
+      "white": { "name": "White" },
+      "red_orange": { "name": "Orange" },
+      "green_light": { "name": "Light green" },
+      "blue_dark": { "name": "Dark blue" },
+      "flash": { "name": "Flash" },
+      "red_amber": { "name": "Amber" },
+      "green_cyan": { "name": "Cyan" },
+      "blue_royal": { "name": "Royal blue" },
+      "strobe": { "name": "Strobe" },
+      "red_yellow": { "name": "Yellow" },
+      "green_sky": { "name": "Sky blue" },
+      "blue_pink": { "name": "Pink" },
+      "fade": { "name": "Fade" },
+      "red_pale_yellow": { "name": "Pale yellow" },
+      "green_aqua": { "name": "Aqua" },
+      "blue_purple": { "name": "Purple" },
+      "smooth": { "name": "Smooth" }
+    }
+  },
+  "selector": {
+    "mode": {
+      "options": {
+        "learn_latest": "Learn latest capture",
+        "import_json": "Import JSON",
+        "export_json": "Export JSON",
+        "clear_overrides": "Clear learned overrides"
+      }
+    },
+    "command_key": {
+      "options": {
+        "brighter": "Brighter",
+        "darker": "Darker",
+        "off": "Off",
+        "on": "On",
+        "red": "Red",
+        "green": "Green",
+        "blue": "Blue",
+        "white": "White",
+        "red_orange": "Orange",
+        "green_light": "Light green",
+        "blue_dark": "Dark blue",
+        "flash": "Flash",
+        "red_amber": "Amber",
+        "green_cyan": "Cyan",
+        "blue_royal": "Royal blue",
+        "strobe": "Strobe",
+        "red_yellow": "Yellow",
+        "green_sky": "Sky blue",
+        "blue_pink": "Pink",
+        "fade": "Fade",
+        "red_pale_yellow": "Pale yellow",
+        "green_aqua": "Aqua",
+        "blue_purple": "Purple",
+        "smooth": "Smooth"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "xxmy_ir_rgb_control_box",
+  "name": "XXMY MY302 IR RGB Control Box",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["infrared"],
+  "documentation": "https://github.com/d3m80l/xxmy-ir-rgb-control-box",
+  "iot_class": "assumed_state",
+  "issue_tracker": "https://github.com/d3m80l/xxmy-ir-rgb-control-box/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
