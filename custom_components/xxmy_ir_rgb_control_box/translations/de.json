@@ -2,7 +2,7 @@
   "config": {
     "abort": {
       "already_configured": "Dieser MY302-Controller wurde bereits mit diesem Sender konfiguriert.",
-      "no_emitters": "Keine Infrarot-Sender-Entitaten gefunden. Bitte richte zuerst einen Infrarot-Sender ein."
+      "no_emitters": "Keine Infrarot-Sender-Entitäten gefunden. Bitte richte zuerst einen Infrarot-Sender ein."
     },
     "step": {
       "user": {
@@ -10,17 +10,17 @@
           "infrared_entity_id": "Infrarot-Sender"
         },
         "data_description": {
-          "infrared_entity_id": "Die Infrarot-Sender-Entitat, die auf den MY302-Empfanger ausgerichtet ist."
+          "infrared_entity_id": "Die Infrarot-Sender-Entität, die auf den MY302-Empfänger ausgerichtet ist."
         },
-        "description": "Wahle den Infrarot-Sender fur die XXMY MY302 RGB-Control-Box aus.",
+        "description": "Wähle den Infrarot-Sender für die XXMY MY302 RGB-Control-Box aus.",
         "title": "XXMY MY302 IR RGB Control Box einrichten"
       }
     }
   },
   "options": {
     "error": {
-      "invalid_json": "Die JSON-Befehlszuordnung ist ungultig.",
-      "no_capture": "Es ist noch kein gelernter IR-Code verfugbar. Drucke bei laufender XIAO-Erfassungs-Firmware eine Taste der Fernbedienung und versuche es erneut."
+      "invalid_json": "Die JSON-Befehlszuordnung ist ungültig.",
+      "no_capture": "Es ist noch kein gelernter IR-Code verfügbar. Drücke bei laufender XIAO-Erfassungs-Firmware eine Taste der Fernbedienung und versuche es erneut."
     },
     "step": {
       "init": {
@@ -33,21 +33,21 @@
         "data": {
           "command_key": "Zu ersetzende Taste"
         },
-        "description": "Status der letzten Erfassung: {capture_status}. Wahle aus, welche MY302-Taste den zuletzt erfassten IR-Code verwenden soll.",
+        "description": "Status der letzten Erfassung: {capture_status}. Wähle aus, welche MY302-Taste den zuletzt erfassten IR-Code verwenden soll.",
         "title": "Aus letzter Erfassung lernen"
       },
       "import_json": {
         "data": {
           "command_map": "JSON-Befehlszuordnung"
         },
-        "description": "Importiere eine JSON-Befehlszuordnung. Importierte Befehle ersetzen vorhandene gelernte Uberschreibungen.",
+        "description": "Importiere eine JSON-Befehlszuordnung. Importierte Befehle ersetzen vorhandene gelernte Überschreibungen.",
         "title": "Gelernte Befehle importieren"
       },
       "export_json": {
         "data": {
           "command_map": "JSON-Befehlszuordnung"
         },
-        "description": "Aktuelle gelernte Befehls-Uberschreibungen.",
+        "description": "Aktuelle gelernte Befehls-Überschreibungen.",
         "title": "Gelernte Befehle exportieren"
       }
     }
@@ -59,16 +59,16 @@
       "off": { "name": "Aus" },
       "on": { "name": "Ein" },
       "red": { "name": "Rot" },
-      "green": { "name": "Grun" },
+      "green": { "name": "Grün" },
       "blue": { "name": "Blau" },
-      "white": { "name": "Weiss" },
+      "white": { "name": "Weiß" },
       "red_orange": { "name": "Orange" },
-      "green_light": { "name": "Hellgrun" },
+      "green_light": { "name": "Hellgrün" },
       "blue_dark": { "name": "Dunkelblau" },
       "flash": { "name": "Flash" },
       "red_amber": { "name": "Bernstein" },
       "green_cyan": { "name": "Cyan" },
-      "blue_royal": { "name": "Konigsblau" },
+      "blue_royal": { "name": "Königsblau" },
       "strobe": { "name": "Strobe" },
       "red_yellow": { "name": "Gelb" },
       "green_sky": { "name": "Himmelblau" },
@@ -86,7 +86,7 @@
         "learn_latest": "Letzte Erfassung lernen",
         "import_json": "JSON importieren",
         "export_json": "JSON exportieren",
-        "clear_overrides": "Gelernte Uberschreibungen loschen"
+        "clear_overrides": "Gelernte Überschreibungen löschen"
       }
     },
     "command_key": {
@@ -96,16 +96,16 @@
         "off": "Aus",
         "on": "Ein",
         "red": "Rot",
-        "green": "Grun",
+        "green": "Grün",
         "blue": "Blau",
-        "white": "Weiss",
+        "white": "Weiß",
         "red_orange": "Orange",
-        "green_light": "Hellgrun",
+        "green_light": "Hellgrün",
         "blue_dark": "Dunkelblau",
         "flash": "Flash",
         "red_amber": "Bernstein",
         "green_cyan": "Cyan",
-        "blue_royal": "Konigsblau",
+        "blue_royal": "Königsblau",
         "strobe": "Strobe",
         "red_yellow": "Gelb",
         "green_sky": "Himmelblau",
