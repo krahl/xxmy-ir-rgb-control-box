@@ -56,8 +56,9 @@ options, choose **Learn latest capture**, select the matching button, and save.
 Learned commands override the built-in profile.
 
 You can also import or export the full learned command map as JSON from the
-options flow. This is the easiest way to turn one maintainer capture session
-into a future baked-in profile.
+options flow. The repository now also includes the decoded NEC capture for the
+known MY302 remote in `scripts/captures/my302_raw_codes.json`; the baked profile
+matches that capture.
 
 ## UI Notes
 

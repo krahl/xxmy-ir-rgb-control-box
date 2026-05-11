@@ -1,8 +1,105 @@
 {
   "profile": "xxmy_my302_common_24_key",
-  "source": "common_extended_nec_fallback",
+  "source": "xiao_ir_mate_nec_capture",
   "modulation": 38000,
   "nec_address": "0xEF00",
-  "notes": "This file documents the baked fallback profile. Replace with real XIAO IR Mate raw captures when available.",
-  "commands": {}
+  "notes": "Captured from the physical XXMY MY302 24-key remote with a Seeed Studio XIAO IR Mate. ESPHome reports NEC commands in transmit form: inverse byte in the high byte, command byte in the low byte.",
+  "commands": {
+    "brighter": {
+      "address": "0xEF00",
+      "command": "0xFF00"
+    },
+    "darker": {
+      "address": "0xEF00",
+      "command": "0xFE01"
+    },
+    "off": {
+      "address": "0xEF00",
+      "command": "0xFD02"
+    },
+    "on": {
+      "address": "0xEF00",
+      "command": "0xFC03"
+    },
+    "red": {
+      "address": "0xEF00",
+      "command": "0xFB04"
+    },
+    "green": {
+      "address": "0xEF00",
+      "command": "0xFA05"
+    },
+    "blue": {
+      "address": "0xEF00",
+      "command": "0xF906"
+    },
+    "white": {
+      "address": "0xEF00",
+      "command": "0xF807"
+    },
+    "red_orange": {
+      "address": "0xEF00",
+      "command": "0xF708"
+    },
+    "green_light": {
+      "address": "0xEF00",
+      "command": "0xF609"
+    },
+    "blue_dark": {
+      "address": "0xEF00",
+      "command": "0xF50A"
+    },
+    "flash": {
+      "address": "0xEF00",
+      "command": "0xF40B"
+    },
+    "red_amber": {
+      "address": "0xEF00",
+      "command": "0xF30C"
+    },
+    "green_cyan": {
+      "address": "0xEF00",
+      "command": "0xF20D"
+    },
+    "blue_royal": {
+      "address": "0xEF00",
+      "command": "0xF10E"
+    },
+    "strobe": {
+      "address": "0xEF00",
+      "command": "0xF00F"
+    },
+    "red_yellow": {
+      "address": "0xEF00",
+      "command": "0xEF10"
+    },
+    "green_sky": {
+      "address": "0xEF00",
+      "command": "0xEE11"
+    },
+    "blue_pink": {
+      "address": "0xEF00",
+      "command": "0xED12"
+    },
+    "fade": {
+      "address": "0xEF00",
+      "command": "0xEC13"
+    },
+    "red_pale_yellow": {
+      "address": "0xEF00",
+      "command": "0xEB14"
+    },
+    "green_aqua": {
+      "address": "0xEF00",
+      "command": "0xEA15"
+    },
+    "blue_purple": {
+      "address": "0xEF00",
+      "command": "0xE916"
+    },
+    "smooth": {
+      "address": "0xEF00",
+      "command": "0xE817"
+    }
+  }
 }

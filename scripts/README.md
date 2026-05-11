@@ -6,9 +6,10 @@
 4. Press a physical MY302 remote button.
 5. Choose **Learn latest capture** and map that capture to the matching command.
 6. Repeat for all 24 buttons.
-7. Export the JSON command map from the options flow.
-8. Save the exported map as `scripts/captures/my302_raw_codes.json`.
+7. Export the JSON command map from the options flow, or collect the decoded NEC
+   `address` / `command` values from the ESPHome logs.
+8. Save the maintainer capture as `scripts/captures/my302_raw_codes.json`.
 
-The current integration can already use exported JSON as learned overrides. A
-future maintainer pass can convert the capture artifact into a baked raw profile
-so new users do not need to learn their remotes.
+The committed capture currently documents decoded NEC defaults for the physical
+MY302 remote. The integration already bakes the same profile by generating raw
+timings from those NEC command bytes.
